@@ -1,41 +1,37 @@
 {
-  "name": "typescript_app_front",
-  "version": "1.0.0",
-  "description": "",
-  "main": "webpack.config.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@apollo/react-components": "3.1.3",
-    "apollo": "^2.15.0",
-    "apollo-cache-inmemory": "latest",
-    "apollo-client": "latest",
-    "apollo-link-http": "latest",
-    "graphql": "^14.5.8",
-    "graphql-tag": "^2.10.1",
-    "react": "^16.11.0",
-    "react-apollo": "^3.1.3",
-    "react-dom": "^16.11.0"
-  },
-  "devDependencies": {
-    "@types/graphql": "14.2.3",
-    "@types/jest": "24.0.19",
-    "@types/node": "12.11.1",
-    "@types/prop-types": "15.7.3",
-    "@types/react": "16.9.9",
-    "@types/react-dom": "16.9.2",
-    "@types/react-test-renderer": "16.9.1",
-    "react-scripts-ts": "3.1.0",
-    "react-test-renderer": "16.10.2",
-    "source-map-loader": "^0.2.4",
-    "ts-loader": "^6.2.1",
-    "typescript": "^3.6.4",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.9",
-    "webpack-graphql-loader": "^1.0.2"
-  }
+	"name": "typescript_app_front",
+	"version": "1.0.0",
+	"description": "",
+	"main": "webpack.config.js",
+	"scripts": {
+		"start": "NODE_ENV=development webpack-dev-server --hot --inline --config webpack.config.js",
+		"build": "webpack --config webpack.config.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"apollo-cache-inmemory": "^1.6.3",
+		"apollo-client": "^2.6.4",
+		"apollo-link-http": "^1.5.16",
+		"react": "^16.11.0",
+		"react-apollo": "^3.1.3",
+		"react-dom": "^16.11.0"
+	},
+	"devDependencies": {
+		"@apollo/react-hooks": "^3.1.3",
+		"@types/react": "^16.9.11",
+		"css-loader": "^3.2.0",
+		"graphql": "^14.5.8",
+		"graphql-tag": "^2.10.1",
+		"sass-loader": "^8.0.0",
+		"source-map-loader": "^0.2.4",
+		"style-loader": "^1.0.0",
+		"ts-loader": "^6.2.1",
+		"typescript": "^3.6.4",
+		"webpack": "^4.41.2",
+		"webpack-cli": "^3.3.9",
+		"webpack-dev-server": "^3.9.0"
+	}
 }
